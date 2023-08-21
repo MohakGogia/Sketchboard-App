@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Whiteboard</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   </head>
   <body>
     <div class="tools-content">
       <div class="tools">
         <div class="tool" id="pencil">
-            <img src="./NewIcons/Black_Pencil.svg" alt="" />
+            <img src="src/Icons/Black_Pencil.svg" alt="" />
             <div class="tool-options hide">
                 <div class="pencil-size">
                     <input type="range" value="1" min="1"  max="40">
@@ -25,30 +26,30 @@
             </div>       
         </div>
         <div class="tool" id="eraser">
-            <img src="./NewIcons/Eraser.svg" alt="" />
+            <img src="src/Icons/Eraser.svg" alt="" />
             <div class="tool-options hide">
                 <div class="eraser-size">
                     <input type="range" value="1" min="1"  max="40">
                 </div>
             </div>    
         </div>
-        <div class="tool" id="undo"><img src="./NewIcons/Undo.svg" alt="" /></div>
-        <div class="tool" id="redo"><img src="./NewIcons/Redo.svg" alt="" /></div>
-        <div class="tool" id="sticky"><img src="./NewIcons/StickyNote.svg" alt="" /></div>
+        <div class="tool" id="undo"><img src="src/Icons/Undo.svg" alt="" /></div>
+        <div class="tool" id="redo"><img src="src/Icons/Redo.svg" alt="" /></div>
+        <div class="tool" id="sticky"><img src="src/Icons/StickyNote.svg" alt="" /></div>
         <div class="tool" id="photo">
-          <img src="./NewIcons/Photo.svg" alt="" />
+          <img src="src/Icons/Photo.svg" alt="" />
           <input type="file" id="photo-upload" class="hide">
         </div>
-        <div class="tool" id="download"><img src="./NewIcons/Download.svg" alt="" /></div>
+        <div class="tool" id="download"><img src="src/Icons/Download.svg" alt="" /></div>
       </div>
     </div>
     <div class="canvas-content">
       <canvas id="canvas"></canvas>
     </div>
-    <script src="./script.js"></script>
-    <script src="./tools.js"></script>
-    <script src="./undoRedo.js"></script>
-    <script src="./sticky.js"></script>
-    <script src="./img.js"></script>
+    <script src="src/script.js"></script>
+    <script src="src/tools.js"></script>
+    <script src="src/undoRedo.js"></script>
+    <script src="src/sticky.js"></script>
+    <script src="src/img.js"></script>
   </body>
 </html>

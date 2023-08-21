@@ -8,20 +8,18 @@ photo.addEventListener("click" , function(){
 
 photoInput.addEventListener("change" , function(e){
     let fileObject = e.target.files[0];
-    console.log(fileObject);
-
-    let imageUrl = URL.createObjectURL(fileObject);
+    let imageURL = URL.createObjectURL(fileObject);
     let img = document.createElement("img");
-    img.src = imageUrl;
+    img.src = imageURL;
     img.classList.add("image-upload");
-    appendSticky(img);
+    appendSticky(e, img);
 })
 
 
 download.addEventListener("click" , function(){
-    let canvasUrl = canvas.toDataURL({type:"image/png"});
+    let canvasUrl = canvas.toDataURL({type: "image/png"});
     let aTag = document.createElement("a");
-    aTag.download = "canvas.png";
     aTag.href = canvasUrl;
+    aTag.download = "canvas.png";
     aTag.click();
 }) 

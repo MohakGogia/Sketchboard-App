@@ -101,51 +101,57 @@
 
 .sticky {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 150px;
-    width: 190px;
-    /* background: lightgreen; */
-    /* border: 1px solid lightgray; */
+	top: 50%;
+	left: 50%;
+	height: 155px;
+	width: 220px;
 }
 
 .sticky-header {
-    height: 15%;
-    background: lightblue;
+    height: 35px;
+    background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
 }
-
+    
 .sticky-header div {
-    height: 70%;
-    width: 8%;
-    border-radius: 50px;
-    margin-right: 5px;
+    height: 80%;
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.minimize {
-    background: blue;
-}
-
-.close {
-    background: red;
+  
+.minimize, .close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 .sticky-content {
-    height: 85%;
+	height: 85%;
 }
 
 textarea {
     height: 100%;
     width: 100%;
-    border: none;
     outline: none;
-    padding: 10px;
-    border: 1px solid lightgray;
+    border: none;
+    padding: 1rem;
+    background: #dadf84;
+    font-size: 1rem;
+    resize: none;
+    box-shadow: 0 10px 6px -6px #777;
 }
 
-.image-upload{
+.image-upload {
     height: 100%;
     width: 100%;
+    object-fit: cover;
 } 

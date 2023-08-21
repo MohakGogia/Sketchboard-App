@@ -1,6 +1,4 @@
 const electron = require("electron");
-
-
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 
@@ -13,10 +11,10 @@ function createWindow(){
           }
       })
 
-      mainWindow.loadFile("public/index.html").then( function(){
-          mainWindow.webContents.openDevTools(); //open dev tools
+      mainWindow.loadFile("index.html").then(function() {
+        //   mainWindow.webContents.openDevTools(); //open dev tools
           mainWindow.maximize();
-        //   mainWindow.removeMenu();
+          mainWindow.removeMenu();
       });
 }
 
